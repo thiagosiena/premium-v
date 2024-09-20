@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Carros Premium</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+
+    <style>
+        /* Carousel */
+        .carousel-inner img {
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 100px;
+        }
+
+        /* Grade de Imagens */
+        .gallery-grid {
+            padding: 60px 0;
+            background-color: var(--background-color);
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-description {
+            background-color: var(--terciary-color);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .gallery-description h2 {
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .gallery-description p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/HomePage.html">Premium-V</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/SobreNos.html">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Noticias.html">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <a href="/Modelos.html" class="cta-button ms-5 d-none d-lg-block"
+                        style="animation: pulse 2s infinite;">Modelos</a>
+                    <a href="/Modelos.html" class="cta-button d-lg-none d-block w-100 mt-2 "
+                        style="animation: pulse 2s infinite;">Modelos</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Descrição da Galeria -->
+    <section class="gallery-description" style="margin-top: 60px;">
+        <div class="container">
+            <h2>Galeria de Veículos</h2>
+            <p>
+                Explore nossa coleção de veículos premium, incluindo modelos esportivos, de luxo e econômicos. Cada
+                carro foi escolhido a dedo para
+                proporcionar a melhor experiência de direção para você.
+            </p>
+        </div>
+    </section>
+
+    <!-- Carousel -->
+    <section class="carousel-section ">
+        <div id="carrosCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrosCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrosCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrosCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/galeria/lambo-w.jpg" class="d-block w-100" alt="Carro 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Carro Esportivo 1</h5>
+                        <p>Experimente a potência e o design incrível.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/galeria/laranja.jpg" class="d-block w-100" alt="Carro 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Carro de Luxo 2</h5>
+                        <p>Elegância e sofisticação em cada detalhe.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/galeria/bmwjpg.jpg" class="d-block w-100" alt="Carro 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Carro Econômico 3</h5>
+                        <p>Eficiência e conforto para o seu dia a dia.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrosCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrosCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+
+
+
+    <!-- Grade de Imagens -->
+    <section class="gallery-grid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="/images/galeria/olhos.jpg" alt="Carro 4">
+                </div>
+                <div class="col-md-4">
+                    <img src="/images/galeria/lambo02.jpg" alt="Carro 5">
+                </div>
+                <div class="col-md-4">
+                    <img src="/images/galeria/coupe-preto.jpg" alt="Carro 6">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="/images/galeria/auditt.jpg" alt="Carro 7">
+                </div>
+                <div class="col-md-4">
+                    <img src="/images/galeria/amg-coupe.jpg" alt="Carro 8">
+                </div>
+                <div class="col-md-4">
+                    <img src="/images/galeria/coupe-bmwjpg.jpg" alt="Carro 9">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p class="mb-0">© 2024 Premium-V - Todos os direitos reservados</p>
+    </footer>
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

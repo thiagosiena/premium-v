@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        .filter-section {
+            margin-bottom: 30px;
+        }
+
+    
+        .filter-section h4 {
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .filter-section select,
+        .filter-section input {
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 15px;
+        }
+
+        .search-bar {
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background-color: var(--white-color);
+            border: 1px solid var(--primary-color);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: fit-content;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-title {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .card-text {
+            font-size: 20px;
+            color: var(--primary-color);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-color);
+        }
+
+        .load-more {
+            font-size: 20px;
+            padding: 15px 30px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .load-more:hover {
+            background-color: var(--accent-color);
+        }
+
+      
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/HomePage.html">Premium-V</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/SobreNos.html">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Noticias.html">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <a href="/Modelos.html" class="cta-button ms-5 d-none d-lg-block"
+                        style="animation: pulse 2s infinite;">Modelos</a>
+                    <a href="/Modelos.html" class="cta-button d-lg-none d-block w-100 mt-2 "
+                        style="animation: pulse 2s infinite;">Modelos</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Filtro de Modelos -->
+    <section class="container" style="margin-top: 100px;">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="filter-section">
+                    <h4>Filtrar por:</h4>
+                    <select name="category" class="form-select mb-3">
+                        <option value="">Todos</option>
+                        <option value="luxury">Luxo</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="suv">SUV</option>
+                    </select>
+                    <input type="number" class="form-control mb-3" placeholder="Preço máximo">
+                    <button class="btn btn-primary w-100">Filtrar</button>
+                </div>
+            </div>
+
+            <!-- Barra de Pesquisa -->
+            <div class="col-md-9">
+                <div class="search-bar">
+                    <input type="text" class="form-control" placeholder="Pesquisar modelo">
+                </div>
+
+                <!-- Modelos -->
+                <section class="container">
+                    <h2 class="text-center mb-4">Nossos Modelos</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="/images/modelos/carro1.jpg" class="card-img-top" alt="Carro 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Modelo A</h5>
+                                    <p class="card-text">R$ 100.000,00</p>
+                                    <p class="card-text">Descrição breve do modelo A, perfeito para quem busca luxo e
+                                        conforto.</p>
+                                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="/images/modelos/carro2.jpg" class="card-img-top" alt="Carro 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Modelo B</h5>
+                                    <p class="card-text">R$ 150.000,00</p>
+                                    <p class="card-text">O modelo B oferece uma excelente combinação de potência e
+                                        eficiência.</p>
+                                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="/images/modelos/carro3.jpg" class="card-img-top" alt="Carro 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Modelo C</h5>
+                                    <p class="card-text">R$ 200.000,00</p>
+                                    <p class="card-text">O modelo C é a escolha perfeita para quem busca um SUV robusto
+                                        e
+                                        espaçoso.</p>
+                                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="/images/modelos/carro4.jpg" class="card-img-top" alt="Carro 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Modelo D</h5>
+                                    <p class="card-text">R$ 300.000,00</p>
+                                    <p class="card-text">Modelo D é ideal para quem busca uma combinação de luxo e
+                                        esportividade.</p>
+                                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="/images/modelos/carro5.jpg" class="card-img-top" alt="Carro 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Modelo E</h5>
+                                    <p class="card-text">R$ 400.000,00</p>
+                                    <p class="card-text">O modelo E é a representação máxima de luxo em cada detalhe.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="/images/modelos/carro6.jpg" class="card-img-top" alt="Carro 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Modelo F</h5>
+                                    <p class="card-text">R$ 500.000,00</p>
+                                    <p class="card-text">Potente e elegante, o modelo F é aideal para quem
+                                        busca performance e estilo.</p>
+                                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botão Carregar Mais -->
+                    <div class="text-center mt-4">
+                        <button class="load-more">Carregar Mais</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light text-center py-3" style="margin-top: 50px;">
+        <p class="mb-0">© 2024 Premium-V - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+
+</html>

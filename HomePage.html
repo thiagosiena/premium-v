@@ -5,19 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carros Premium</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
-   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        section {
+            padding: 60px 0;
+        }
+
+        section.bg-dark .container {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+        }
+
+        section.bg-light .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+        }
+
+        /* Banner Styles */
+
+        section.bg-dark h1 {
+            font-size: 90px;
+        }
+
+        p.lead {
+            font-size: 40px;
+        }
+
+        /* ----- */
+
+        .section-title {
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .section-text {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .section-img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Navbar -->
-  
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-dark bg-dark fixed-top">
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="/">Premium-V</a>
+                <a class="navbar-brand" href="/HomePage.html">Premium-V</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,63 +77,126 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="/Funcionalidades">Sobre Nós</a>
+                            <a class="nav-link" href="/SobreNos.html">Sobre Nós</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/#pricing">Modelos</a>
+                            <a class="nav-link" href="/Galeria.html">Galeria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" rel="noreferrer"
-                                target="_blank">Contato</a>
+                            <a class="nav-link" href="/Noticias.html">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Contato.html">Contato</a>
                         </li>
                     </ul>
-                    <a href="/#" class="cta-button ms-5 d-none d-lg-block">Adicionar ao Discord</a>
-                    <a href="/#" class="cta-button d-lg-none d-block w-100 mt-2">Adicionar ao Discord</a>
+                    <a href="/Modelos.html" class="cta-button ms-5 d-none d-lg-block"
+                        style="animation: pulse 2s infinite;">Modelos</a>
+                    <a href="/Modelos.html" class="cta-button d-lg-none d-block w-100 mt-2 "
+                        style="animation: pulse 2s infinite;">Modelos</a>
                 </div>
             </div>
         </nav>
-
+    </header>
 
     <!-- Banner principal -->
-    <section class="bg-dark text-light text-center py-5">
-        <div class="container">
-            <h1>Encontre o Carro dos Seus Sonhos</h1>
-            <p class="lead">Ofertas exclusivas para você</p>
+    <section class="bg-dark text-light text-center py-5"
+        style="margin-top: 60px; height: 900px; background: linear-gradient(135deg, #1b1e23, #212529, #2b2e33);"">
+        <div class=" container">
+        <h1>Encontre o Carro dos Seus Sonhos</h1>
+        <p class="lead">Ofertas exclusivas para você</p>
         </div>
     </section>
 
-    <!-- Modelos -->
-    <section class="container my-5">
-        <h2 class="text-center mb-4">Nossos Modelos</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Carro 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Modelo A</h5>
-                        <p class="card-text">R$ 100.000,00</p>
-                        <a href="#" class="btn btn-primary">Saiba Mais</a>
-                    </div>
+    <!-- Section Sobre Nós -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="/images/homepage/camaro.jpg" alt="Sobre Nós" class="section-img">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title">Sobre Nós</h2>
+                    <p class="section-text">Descubra mais sobre nossa história e os valores que nos movem a oferecer os
+                        melhores carros do mercado.</p>
+                    <br>
+                    <a href="/SobreNos.html" class="cta-button">Descubra Mais</a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Carro 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Modelo B</h5>
-                        <p class="card-text">R$ 150.000,00</p>
-                        <a href="#" class="btn btn-primary">Saiba Mais</a>
-                    </div>
+        </div>
+    </section>
+
+    <!-- Section Galeria -->
+    <section class="bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <img src="/images/homepage/old-one.jpg" alt="Galeria" class="section-img">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2 class="section-title">Galeria</h2>
+                    <p class="section-text">Explore nossa coleção de veículos premium em nossa galeria exclusiva.</p>
+                    <br>
+                    <a href="/Galeria.html" class="cta-button">Veja a Galeria</a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Carro 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Modelo C</h5>
-                        <p class="card-text">R$ 200.000,00</p>
-                        <a href="#" class="btn btn-primary">Saiba Mais</a>
-                    </div>
+        </div>
+    </section>
+
+    <!-- Section Modelos -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="/images/homepage/lambo-y.jpg" alt="Modelos" class="section-img">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title">Modelos</h2>
+                    <p class="section-text">Conheça todos os modelos disponíveis e escolha o carro perfeito para você.
+                    </p>
+                    <br>
+                    <a href="/Modelos.html" class="cta-button">Veja Nossos Modelos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Notícias -->
+
+    <section class="bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <img src="images/homepage/mercedes.jpg" alt="Galeria" class="section-img">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2 class="section-title">Notícias</h2>
+                    <p class="section-text">Acompanhe as últimas novidades do mundo automobilístico, lançamentos, e
+                        notícias sobre nossos novos modelos e ofertas especiais.</p>
+                    <br>
+                    <a href="/Noticias.html" class="cta-button">Explore as Notícias</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contato -->
+
+    <section class="bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="/images/homepage/cupe-verde.jpg" alt="Modelos" class="section-img">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title">Contato</h2>
+                    <p class="section-text">
+                        Precisa de mais informações ou deseja falar conosco diretamente?
+                        Nossa equipe está disponível para responder suas dúvidas. Entre em contato
+                        e vamos ajudá-lo a encontrar o carro perfeito ou esclarecer qualquer dúvida
+                        sobre nossos serviços.
+                    </p>
+                    <br>
+                    <a href="/Modelos.html" class="cta-button">Fale Conosco</a>
                 </div>
             </div>
         </div>
@@ -89,12 +204,10 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-light text-center py-3">
-        <p class="mb-0">© 2024 Carros Premium - Todos os direitos reservados</p>
+        <p class="mb-0">© 2024 Premium-V - Todos os direitos reservados</p>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+DEdKxzd4k+MbIV1I5luoEXBOBn5M"
         crossorigin="anonymous"></script>
 </body>
 
