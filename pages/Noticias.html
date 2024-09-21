@@ -4,18 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notícias - Carros Premium</title>
-    <!-- Bootstrap CSS -->
+    <title>Notícias</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
-
         .news-header {
             background-color: var(--terciary-color);
             height: 300px;
-            color: white;
             text-align: center;
             display: flex;
             align-items: center;
@@ -55,7 +52,7 @@
         }
 
         .news-card-title {
-            font-size: 1.5rem;
+            font-size: 24px;
             font-weight: 600;
             color: var(--text-color);
         }
@@ -105,7 +102,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="/HomePage.html">Premium-V</a>
+                <a class="navbar-brand" href="/pages/HomePage.html">Premium-V</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -113,21 +110,21 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="/SobreNos.html">Sobre Nós</a>
+                            <a class="nav-link" href="/pages/SobreNos.html">Sobre Nós</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Galeria.html">Galeria</a>
+                            <a class="nav-link" href="/pages/Galeria.html">Galeria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Noticias.html">Notícias</a>
+                            <a class="nav-link" href="/pages/Noticias.html">Notícias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Contato.html">Contato</a>
+                            <a class="nav-link" href="/pages/Contato.html">Contato</a>
                         </li>
                     </ul>
-                    <a href="/Modelos.html" class="cta-button ms-5 d-none d-lg-block"
+                    <a href="/pages/Modelos.html" class="cta-button ms-5 d-none d-lg-block"
                         style="animation: pulse 2s infinite;">Modelos</a>
-                    <a href="/Modelos.html" class="cta-button d-lg-none d-block w-100 mt-2 "
+                    <a href="/pages/Modelos.html" class="cta-button d-lg-none d-block w-100 mt-2 "
                         style="animation: pulse 2s infinite;">Modelos</a>
                 </div>
             </div>
@@ -136,15 +133,15 @@
 
 
     <section class="news-header mt-5">
-        <h1>Últimas Notícias</h1>
+        <h1 style="color: var(--accent-color);">Últimas Notícias</h1>
     </section>
 
     <!-- Seção de Notícias -->
     <section class="news-section">
         <div class="container">
             <div class="row">
-         
-                <div class="col-md-4">
+
+                <article class="col-md-4">
                     <div class="card news-card">
                         <img src="/images/noticias/noticia1.jpg" alt="Notícia 1" class="card-img-top">
                         <div class="card-body news-card-body">
@@ -155,9 +152,9 @@
                             <a href="#">Leia mais</a>
                         </div>
                     </div>
-                </div>
-            
-                <div class="col-md-4">
+                </article>
+
+                <article class="col-md-4">
                     <div class="card news-card">
                         <img src="/images/noticias/noticia2.jpg" alt="Notícia 2" class="card-img-top">
                         <div class="card-body news-card-body">
@@ -168,9 +165,9 @@
                             <a href="#">Leia mais</a>
                         </div>
                     </div>
-                </div>
-           
-                <div class="col-md-4">
+                </article>
+
+                <article class="col-md-4">
                     <div class="card news-card">
                         <img src="/images/noticias/noticia3.jpg" alt="Notícia 3" class="card-img-top">
                         <div class="card-body news-card-body">
@@ -181,7 +178,7 @@
                             <a href="#">Leia mais</a>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
             <!-- Mais Notícias -->
             <div class="text-center mt-5">
@@ -189,10 +186,12 @@
             </div>
         </div>
     </section>
+
     <!-- Footer -->
     <footer class="text-light text-center py-3">
         <p class="mb-0">© 2024 Premium-V - Todos os direitos reservados</p>
     </footer>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
